@@ -33,6 +33,10 @@ nav ul, nav li, nav li a{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    right: 0px;
   
 }
 
@@ -104,7 +108,7 @@ nav ul, nav li, nav li a{
 
 .car_description h1{
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-bottom: 0px;
 }
 .car_description h2{
@@ -156,7 +160,6 @@ nav ul, nav li, nav li a{
 
 footer{
     display: flex;
-    margin-top: 40px;
     justify-content: center;
 }
 
@@ -165,16 +168,17 @@ footer{
 }
 
 @keyframes descer{
-    0%{top: 580px; left: 680px}
-    20%{top: 585px; left: 680px}
-    40%{top: 580px; left: 680px}
-    60%{top: 582px; left: 680px}
-    80%{top: 580px; left: 680px}
-    100%{top: 580px; left: 680px}
+    0%{top: 580px}
+    20%{top: 585px;}
+    40%{top: 580px;}
+    60%{top: 582px;}
+    80%{top: 580px;}
+    100%{top: 580px;}
 }
 
 .seta img{
     position: absolute;
+    left: 665px;
     animation-name: descer;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
