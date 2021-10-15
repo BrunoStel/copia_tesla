@@ -1,7 +1,7 @@
 body{
     margin:0px;
     box-sizing: border-box;
-    height: 0px;
+
 }
 
 /*--------------------Header--------------------*/
@@ -84,20 +84,17 @@ nav ul, nav li, nav li a{
 
 
 /*--------------------Section--------------------*/
-.banner{
+.main{
     background-image:url('../images/bg.jpg');
     background-position:center;
 	background-size:cover;
-    height:575px;
+    height:calc(100vh - 50px);
 }
-
 
 .geral{
     display: flex;
     flex-direction: column;
 }
-
-
 
 .car_description{
     display: flex;
@@ -122,12 +119,20 @@ nav ul, nav li, nav li a{
 }
 
 
-
+/*--------------------Footer--------------------*/
+footer{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+}
 
 
 .botoes {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+
 }
 
 .botoes a{
@@ -135,50 +140,44 @@ nav ul, nav li, nav li a{
 }
 
 .button{
-    border-radius:120px;
-    margin-top: 300px;
+    width: 220px;
+    border-radius:30px;
     background-color: rgb(211, 206, 206);
     text-transform: uppercase;
     color: black;
     text-align: center;
+    padding: 15px;
     font-size: 13px;
-    padding-top:11px;
-    padding-bottom:11px;
-    padding-left: 50px;
-    padding-right: 50px;
     letter-spacing: 1px;
+    margin:0 20px;
 }
 
 .button:first-child{
     background-color: rgb(34, 29, 29);
     color: white;
-    padding-left: 78px;
-    padding-right: 78px;
-    margin-right: 40px;
 }
 
 
-footer{
+.seta{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    height: 30px;
 }
 
-.seta img{
-    transform: scale(0.5);
-}
+
 
 @keyframes descer{
-    0%{top: 580px}
-    20%{top: 585px;}
-    40%{top: 580px;}
-    60%{top: 582px;}
-    80%{top: 580px;}
-    100%{top: 580px;}
+    0%{margin-top: 0px;}
+    20%{margin-top: 5px;}
+    40%{margin-top: 10px;}
+    60%{margin-top: 5px;}
+    80%{margin-top: 0px;}
+    100%{margin-top: 0px;}
 }
 
 .seta img{
-    position: absolute;
-    left: 665px;
+    height: 15px;
     animation-name: descer;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
